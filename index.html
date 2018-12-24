@@ -5,7 +5,7 @@
     <title>Lembre!</title>
     <meta name="description" content="Um aplicativo feito para te auxiliar na memorização de conteúdos que você queira aprender, disponível para Android via APK. Feito por estudantes para o TCC do curso técnico em Informática do IFRJ Campus Arraial do Cabo." property="description">
     <meta name="keywords" content="landing page, app, product page, memória, github, aprender, android, instituto federal, educação, memorização" property="keywords">
-    <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" property="viewport">
     <link rel="icon" href="favicon.ico">
     <link type="text/css" rel="stylesheet" href="./res/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./res/styles.css">
@@ -17,7 +17,7 @@
       <div>
 
         <header>
-          <a href="https://portal.ifrj.edu.br/arraial-do-cabo" target="_blank"><img src="res/Logo_IFRJ.jpg" class="logo-ifrj"/></a>
+          <a href="https://portal.ifrj.edu.br/arraial-do-cabo" target="_blank"><img src="res/Logo_IFRJ.jpg" class="logo-ifrj center-block"/></a>
         </header>
 
         <section>
@@ -39,7 +39,11 @@
                     <div class="mt-table--full">
                       
                         <div class="user-signup__form-group m-lg-v form-group text-center">
-                          <a href="./res/background.jpg" download="lembreapp.jpg" target="iframe_download"><button onclick="temSuporte()" class="btn btn-default submit user-signup__submit"><span>Baixe agora!</span></button></a>
+                          <a href="./res/background.jpg" download="lembreapp.jpg" target="iframe_download">
+                            <button onclick="temSuporte()" class="btn btn-default submit user-signup__submit">
+                              <span>Baixe agora!</span>
+                            </button>
+                          </a>
                         </div>
                         <iframe name="iframe_download" class="hidden"></iframe>
                     
@@ -59,5 +63,6 @@
          alert(("download" in document.createElement("a") ? "Possui suporte." : "Não há suporte."));
         }
     </script>
+
   </body>
 </html>
